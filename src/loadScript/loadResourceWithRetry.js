@@ -7,7 +7,6 @@ const getFileExtension  = require('../path/getFileExtension')
  * @date: 2023-12-05 10:33:09
  */
 function loadResourceWithRetry(url) {
-	console.log("🚀 ~ loadResourceWithRetry ~ loadResourceWithRetry:", url)
 	const extension = getFileExtension(url)
 	const elementType = extension === 'css' ? 'link' : 'script'
 	return new Promise((resolve, reject) => {
